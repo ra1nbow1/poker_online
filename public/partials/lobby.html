@@ -12,9 +12,9 @@
 	</div>
 	<table id="table-list">
 		<tr>
-			<th class="dark-border">Name</th>
+			<th class="dark-border">Название</th>
 			<th class="dark-border">BB/SB</th>
-			<th>Players</th>
+			<th>Игроков</th>
 		</tr>
 		<tr ng-repeat="table in lobbyTables">
 			<td><a href="/table-{{table.seatsCount}}/{{table.id}}">{{table.name}}</a></td>
@@ -22,7 +22,4 @@
 			<td class="centered-text">{{table.playersSeatedCount}}/{{table.seatsCount}}</td>
 		</tr>
 	</table>
-</div>			
-<p id="developer-info">
-	Developed by George Balasis. View the code on <a href="https://github.com/geobalas/Poker" target="_blank">github</a>.
-</p>
+</div>
