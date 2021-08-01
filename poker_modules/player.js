@@ -167,16 +167,7 @@ Player.prototype.evaluateHand = function( board ) {
     var straight = [],
         flushes = {},
         pairs = {};
-        flushes['s'] = [],
-        flushes['h'] = [],
-        flushes['d'] = [],
-        flushes['c'] = [],
-        evaluatedHand = {
-            'rank'      : '',
-            'name'      : '',
-            'rating'    : 0,
-            'cards'     : [],
-        };
+        
         
     // Getting the suit of the first card
     flushes[ cards[0][1] ].push( cards[0] );
