@@ -108,7 +108,7 @@ Table.prototype.findNextPlayer = function( offset, status ) {
 				if( this.seats[i] !== null ) {
 					var validStatus = true;
 					for( var j=0 ; j<statusLength ; j++ ) {
-						validStatus &= !!this.seats[i].public[status[j]];
+						validStatus &= Boolean(this.seats[i].public[status[j]]);
 					}
 					if( validStatus ) {
 						return i;
@@ -120,7 +120,7 @@ Table.prototype.findNextPlayer = function( offset, status ) {
 			if( this.seats[i] !== null ) {
 				var validStatus = true;
 				for( var j=0 ; j<statusLength ; j++ ) {
-					validStatus &= !!this.seats[i].public[status[j]];
+					validStatus &= Boolean(this.seats[i].public[status[j]]);
 				}
 				if( validStatus ) {
 					return i;
@@ -162,7 +162,7 @@ Table.prototype.findPreviousPlayer = function( offset, status ) {
 				if( this.seats[i] !== null ) {
 					var validStatus = true;
 					for( var j=0 ; j<statusLength ; j++ ) {
-						validStatus &= !!this.seats[i].public[status[j]];
+						validStatus &= Boolean(this.seats[i].public[status[j]]);
 					}
 					if( validStatus ) {
 						return i;
@@ -174,7 +174,7 @@ Table.prototype.findPreviousPlayer = function( offset, status ) {
 			if( this.seats[i] !== null ) {
 				var validStatus = true;
 				for( var j=0 ; j<statusLength ; j++ ) {
-					validStatus &= !!this.seats[i].public[status[j]];
+					validStatus &= Boolean(this.seats[i].public[status[j]]);
 				}
 				if( validStatus ) {
 					return i;
