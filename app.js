@@ -190,7 +190,7 @@ io.sockets.on('connection', function( socket ) {
 			&& data.seat < tables[data.tableId].public.seatsCount
 			&& typeof players[socket.id] !== 'undefined'
 			// The seat is empty
-			&& tables[data.tableId].seats[data.seat] == null
+			&& tables[data.tableId].seats[data.seat] === null
 			// The player isn't sitting on any other tables
 			&& players[socket.id].sittingOnTable === false
 			// The player had joined the room of the table
