@@ -17,7 +17,7 @@ app.use(lessMiddleware(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Development Only
-if ( 'development' == app.get('env') ) {
+if ( app.get('env') == 'development' ) {
 	app.use( express.errorHandler() );
 }
 
