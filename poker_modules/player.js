@@ -99,7 +99,7 @@ Player.prototype.bet = function( amount ) {
         amount = this.public.chipsInPlay;
     }
     this.public.chipsInPlay -= amount;
-    this.public.bet += +amount;
+    this.public.bet += Number(amount);
 }
 
 /**
@@ -112,7 +112,7 @@ Player.prototype.raise = function( amount ) {
         amount = this.public.chipsInPlay;
     }
     this.public.chipsInPlay -= amount;
-    this.public.bet += +amount;
+    this.public.bet += Number(amount);
 }
 
 /**
