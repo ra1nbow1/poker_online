@@ -27,7 +27,7 @@ var eventEmitter = {};
 
 var port = process.env.PORT || 3000;
 server.listen(port);
-console.log('Listening on port ' + port);
+
 
 // The lobby
 app.get('/', function( req, res ) {

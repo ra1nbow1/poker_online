@@ -103,7 +103,7 @@ describe("Splitting the pot between two players", function() {
 		table.playerFolded();
 		var playerOnDealersLeft = table.findNextPlayer( table.public.dealerSeat );
 		var playerOnDealersRight = table.findPreviousPlayer( table.public.dealerSeat );
-		console.log( playerOnDealersRight );
+		
 		for( var i=0 ; i<2 ; i++ ) {
 			expect( table.seats[playerOnDealersLeft].public.chipsInPlay ).toEqual( table.seats[playerOnDealersRight].public.chipsInPlay+1 );
 		}
